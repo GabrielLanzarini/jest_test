@@ -1,13 +1,12 @@
+const { json } = require("express")
 const express = require("express")
+const router = require("./router")
 
 const app = express()
-app.get("/get", (req, res) => {
-    console.log('awuidgiu');
-    res.status(200).json({message: 'uhdo'})
-})
+
+app.use(json())
+app.use(router)
 
 app.listen(3000, () => {
-    console.log("rodando na porta 80")
+    console.log("rodando na porta 3000")
 })
-
-
