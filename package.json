@@ -4,12 +4,18 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest ",
+        "dev": "nodemon index.js"
     },
     "keywords": [],
     "author": "Gabriel Henrique Antonellli Lanzarini",
     "license": "MIT",
     "devDependencies": {
         "jest": "^29.5.0"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "nodemon": "^2.0.22",
+        "supertest": "^6.3.3"
     }
 }
